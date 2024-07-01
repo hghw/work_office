@@ -1,0 +1,29 @@
+.hidden{
+  display: none;
+}
+.display{
+  display: block;
+}
+
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+  .hidden{
+    display: block;
+  }
+}
+/* Màn hình desktop(1024 x 1280) */
+@media screen and (min-width: 1280px) {
+
+}
