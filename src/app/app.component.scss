@@ -1,9 +1,84 @@
-.hidden {
-    display: none;
+$backgroundDefault :rgba(248, 216, 159, 1);
+
+body {
+    margin: 0;
 }
 
-.display {
-    display: block;
+header {
+    width: 100%;
+    color: #000;
+
+    .row {
+        height: 65px;
+    }
+
+    .nav-item {
+        width: 130px;
+
+        a {
+            color: #000 !important;
+            text-decoration: none !important;
+            font-weight: 600;
+        }
+    }
+
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.logo-container {
+    img {
+        width: 70px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    span {
+        font-family: Inter;
+        font-size: 6px;
+        font-weight: 700;
+        line-height: 7.68px;
+        text-align: left;
+        color: rgba(255, 164, 0, 1);
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-by-keyword {
+    width: 100%;
+    height: 340px;
+    padding: 88px 453px 51px 454px;
+    background-color: $backgroundDefault
+}
+
+.content {
+    background-color: #fff;
+    height: 340px;
+}
+
+footer {
+    height: 412px;
+    background-color: $backgroundDefault;
 }
 
 /*Iphone(480 x 640)*/

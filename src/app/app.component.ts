@@ -10,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'work_office';
+  logoPath = "assets/images/logo.png";
 }
