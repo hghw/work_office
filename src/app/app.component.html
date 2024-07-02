@@ -5,8 +5,8 @@
   <header>
     <div class="row">
       <div class="col-2 logo-container mt-2">
-        <div class="flex-column">
-          <img [src]="logoPath" />
+        <div class="flex-column-center">
+          <img [src]="images.logoPath" />
           <span>NỀN TẢNG TUYỂN DỤNG SỐ HÀNG ĐẦU</span>
         </div>
       </div>
@@ -20,24 +20,93 @@
         </ul>
       </div>
       <div class="col-3 nav-button">
-        <button type="button" class="btn btn-light">Nhà tuyển dụng</button>
+        <button type="button" class="btn btn-light btn-employer">Nhà tuyển dụng</button>
         <button type="button" class="btn btn-warning pl-1">Đăng nhập</button>
       </div>
     </div>
   </header>
 
   <section class="filter-by-keyword">
-
+    <div class="container-filter">
+      <div class="row">
+        <div class="col-12 text">Tìm kiếm cùng <span class="work">Work</span><span class="office">Office</span></div>
+        <div class="col-12 input-search pt-3">
+          <div class="form">
+            <i class="fa fa-search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg>
+            </i>
+            <input type="text" class="form-control form-input" placeholder="Nhập nội dung tìm kiếm">
+          </div>
+        </div>
+        <div class="col-12 pt-3">
+          <div class="keyword-suggest">
+            <div class="flex-row-center">
+              <span>Đề xuất từ khóa:</span>
+              <button type="button" class="btn btn-light btn-suggest m-2">Việc làm văn phòng</button>
+              <button type="button" class="btn btn-light btn-suggest m-2">Kế toán</button>
+              <button type="button" class="btn btn-light btn-suggest m-2">IT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="content">
-
+    <router-outlet></router-outlet>
   </section>
 
   <footer>
+    <div class="row align-items-center" style="height: 100%;">
 
+      <div class="col-4">
+        <div class="flex-column-center logo-container">
+          <img [src]="images.logoPath" />
+          <span class="text">NỀN TẢNG TUYỂN DỤNG SỐ HÀNG ĐẦU</span>
+        </div>
+        <div class="contact">
+          <div>Liên hệ:</div>
+          <div>Hotline: 0910000000</div>
+          <div>Email: hotro.workoffice&#64;gmail.com</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="flex-column-center">
+          <h5>Về WorkOffice</h5>
+          <div class="about">
+            <div>Giới thiệu</div>
+            <div>Hỏi đáp</div>
+            <div>Liên hệ</div>
+            <div>Chính sách bảo mật</div>
+            <div>Điều khoản dịch vụ</div>
+            <div>Quy chế hoạt động</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="flex-column">
+          <h5>Ứng dụng di động</h5>
+          <div class="about">
+            <div class="flex-row">
+              <img [src]="images.appStorePath" width="180" class="pr-10" />
+              <img [src]="images.googlePlayPath" width="180" class="pr-10" />
+            </div>
+            <div>Chứng nhận bởi</div>
+            <img [src]="images.certificationPath" class="pr-10" />
+            <div>Theo dõi <span class="work">Work</span><span class="office">Office</span> trên</div>
+            <div class="flex-row">
+              <img [src]="images.facebook" width="20" class="m-lg-1" />
+              <img [src]="images.youtube" width="20" class="m-lg-1" />
+              <img [src]="images.tiktok" width="20" class="m-lg-1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 
 </html>
-<router-outlet></router-outlet>

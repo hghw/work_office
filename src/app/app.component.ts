@@ -9,6 +9,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  images = {
+    logoPath: "assets/images/logo.png",
+    googlePlayPath: "assets/images/google-play.png",
+    appStorePath: "assets/images/app-store.png",
+    certificationPath: "assets/images/certification.png",
+    facebook: "assets/images/facebook.png",
+    youtube: "assets/images/youtube.png",
+    tiktok: "assets/images/tiktok.png",
+  }
   title = 'work_office';
-  logoPath = "assets/images/logo.png";
 }

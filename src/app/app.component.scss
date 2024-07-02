@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+.work {
+    color: #302A7E;
+}
+
+.office {
+    color: #F9A11B;
+}
+
 header {
     width: 100%;
     color: #000;
@@ -33,42 +41,116 @@ header {
         align-items: center;
         justify-content: space-evenly;
     }
-}
 
-.logo-container {
-    img {
-        width: 70px;
-        height: 40px;
-        object-fit: cover;
+    .btn-employer {
+        border: 1px solid #FFA400;
+        color: #FFA400;
     }
 
-    span {
-        font-family: Inter;
-        font-size: 6px;
-        font-weight: 700;
-        line-height: 7.68px;
-        text-align: left;
-        color: rgba(255, 164, 0, 1);
+    .logo-container {
+        img {
+            width: 70px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        span {
+            font-family: Inter;
+            font-size: 6px;
+            font-weight: 700;
+            line-height: 7.68px;
+            text-align: left;
+            color: rgba(255, 164, 0, 1);
+        }
     }
 }
+
 
 .flex-row {
     display: flex;
     flex-direction: row;
 }
 
+.flex-row-center {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
-.flex-column {
+
+.flex-column-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .filter-by-keyword {
     width: 100%;
     height: 340px;
-    padding: 88px 453px 51px 454px;
-    background-color: $backgroundDefault
+    background-color: $backgroundDefault;
+    color: #000;
+
+    .container-filter {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding: 150px;
+
+        .text {
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+
+    .input-search {
+        .form {
+
+            position: relative;
+        }
+
+        .form i {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            color: #9ca3af;
+        }
+
+        .form span {
+            position: absolute;
+            right: 17px;
+            top: 13px;
+            padding: 2px;
+            border-left: 1px solid #d1d5db;
+
+        }
+
+        .form-input {
+
+            height: 55px;
+            text-indent: 33px;
+            border-radius: 10px;
+        }
+
+        .form-input:focus {
+
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+    .keyword-suggest {
+        color: #270089;
+
+        button {
+            color: #270089;
+            font-weight: 500;
+        }
+    }
 }
 
 .content {
@@ -79,6 +161,51 @@ header {
 footer {
     height: 412px;
     background-color: $backgroundDefault;
+
+    .logo-container {
+        img {
+            width: 200px;
+            object-fit: cover;
+        }
+
+        .text {
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 7.68px;
+            text-align: left;
+            color: rgba(255, 164, 0, 1);
+        }
+    }
+
+    .contact {
+        margin-top: 50px;
+        text-align: left;
+        font-weight: 600;
+        margin-left: 50px;
+
+        div {
+            margin-top: 10px;
+        }
+    }
+
+    .about {
+        margin-top: 10px;
+        text-align: left;
+        font-weight: 600;
+
+        div {
+            margin-top: 10px;
+        }
+    }
+}
+
+img {
+    object-fit: cover;
+}
+
+.pr-10 {
+    padding-right: 10px;
 }
 
 /*Iphone(480 x 640)*/
