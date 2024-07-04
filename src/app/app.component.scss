@@ -155,11 +155,120 @@ header {
 
 .content {
     background-color: #fff;
-    height: 340px;
+    width: 100%;
+
+    .jobs-best {
+
+        .component {
+            border: 1px solid #FFA400;
+            padding-top: 1px;
+
+            >.title {
+                background-color: #FFF8EC;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .list-job-best {
+                background-color: #fff;
+                padding-bottom: 1px;
+
+                .card {
+                    box-shadow: 0 4px 15px rgb(0 0 0 / 0.2);
+                    border-radius: 1rem;
+                    border: none;
+                }
+
+                .title {
+                    font-size: 14px;
+                    color: #270089;
+                }
+
+                .company-name {
+                    font-size: 13px;
+                    color: #270089;
+                }
+
+                .range-salary {
+                    color: #FFA400;
+                }
+
+                .company-name {
+                    font-size: 13px;
+                }
+
+                .image {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 1rem 0 0 1rem;
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+
+                .rounded-pill {
+                    text-align: center;
+                    background-color: #FFDDE2;
+                    padding-bottom: 3px;
+                    width: 50px;
+                }
+
+                .hot {
+                    color: #E3223C;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .pagination {
+            #list-pagination {
+                display: flex;
+                justify-content: center;
+                width: 180px;
+                height: 20px;
+                margin: 0 auto;
+                overflow: hidden;
+                z-index: 1;
+            }
+
+            .button {
+                width: 10px;
+                height: 10px;
+                float: left;
+                margin-right: 10px;
+                background-color: #F8D89F;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.3s ease width;
+            }
+
+            .button:first-child {
+                background-color: #FFA400;
+            }
+
+            .button:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.font-color-default {
+    color: #FFA400;
+}
+
+.font-job {
+    color: #270089;
 }
 
 footer {
-    height: 412px;
     background-color: $backgroundDefault;
 
     .logo-container {
@@ -179,8 +288,8 @@ footer {
     }
 
     .contact {
-        margin-top: 50px;
-        text-align: left;
+        // margin-top: 50px;
+        //text-align: left;
         font-weight: 600;
         margin-left: 50px;
 

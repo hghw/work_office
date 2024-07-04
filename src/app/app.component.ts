@@ -17,6 +17,7 @@ export class AppComponent {
     facebook: "assets/images/facebook.png",
     youtube: "assets/images/youtube.png",
     tiktok: "assets/images/tiktok.png",
+    hot: "assets/images/hot.png",
   }
   title = 'work_office';
 }
