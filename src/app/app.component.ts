@@ -18,6 +18,8 @@ export class AppComponent {
     youtube: "assets/images/youtube.png",
     tiktok: "assets/images/tiktok.png",
     hot: "assets/images/hot.png",
+    robot: "assets/images/robot.png",
+    laptop: "assets/images/laptop.png",
   }
   title = 'work_office';
 }

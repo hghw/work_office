@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet">
 </head>
 
 <body>
@@ -25,8 +26,8 @@
         </ul>
       </div>
       <div class="col-3 nav-button">
-        <button type="button" class="btn btn-light btn-employer">Nhà tuyển dụng</button>
-        <button type="button" class="btn btn-warning pl-1">Đăng nhập</button>
+        <button type="button" class="btn  btn-employer">Nhà tuyển dụng</button>
+        <button type="button" class="btn  btn-login">Đăng nhập</button>
       </div>
     </div>
   </header>
@@ -61,199 +62,343 @@
 
   <section class="content">
     <div class="jobs-best">
-      <div class="m-4">
 
-        <div class="component rounded">
-          <div class="title">
-            <div class="ml-3">
-              <div class="text font-color-default">Việc Làm Tốt Nhất</div>
+      <div class="component rounded m-4">
+        <div class="title" style="height: 10vh;">
+          <div class="ml-3">
+            <div class="text font-color-default">Việc Làm Tốt Nhất</div>
+          </div>
+          <div class=" mr-3">
+            <a href="#" class="text font-color-default">XEM TẤT CẢ</a>
+          </div>
+        </div>
+        <div class="list-job-best ml-3 mb-3 mr-3">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class=" mr-3">
-              <a href="#" class="text font-color-default">XEM TẤT CẢ</a>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="list-job-best ml-3 mb-3 mr-3">
-            <div class="row">
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
-                    </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
-                    </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
                   </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
                   </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+              <div class="card flex-row">
+                <div class="card-header image">
+                  <img [src]="images.logoPath" width="80" height="80" />
+                </div>
+                <div class="card-body" style="padding:15px 0">
+                  <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                  <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                  <div class="range-salary">10 - 20 triệu</div>
+                  <div class="address">Hà Nội</div>
+                </div>
+                <div class="card-body" style="padding:15px 10px">
+                  <div class="rounded-pill">
+                    <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pagination mt-4">
+            <div id="list-pagination">
+              <div class="button active"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="market-infomation">
+      <div class="component rounded m-4">
+
+        <div class="title">
+          <div class="ml-3 mt-2">
+            <h4 class="text">Thông tin thị trường tuyển dụng</h4>
+          </div>
+        </div>
+        <div class="row pb-3">
+
+          <div class="col-5">
+            <div class="text-center  mt-5 mb-5"><img [src]="images.robot" /></div>
+            <div class="font-job text-left ml-3 mt-3" style="font-size: 18px; font-weight: 600;">Cập nhật hằng ngày</div>
+            <div class="mb-">
+              <div class="row flex-column">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                  <div class="card flex-row ml-3 mr-3">
+                    <div class="card-header image">
+                      <img [src]="images.logoPath" width="80" height="80" />
+                    </div>
+                    <div class="card-body" style="padding:15px 0">
+                      <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                      <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                      <div class="address font-job mt-1">Hà Nội</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                  <div class="card flex-row ml-3 mr-3">
+                    <div class="card-header image">
+                      <img [src]="images.logoPath" width="80" height="80" />
+                    </div>
+                    <div class="card-body" style="padding:15px 0">
+                      <h6 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h6>
+                      <div class="company-name">Công ty WorkOffice Việt Nam</div>
+                      <div class="address font-job mt-1">Hà Nội</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+          </div>
+
+          <div class="col-7">
+
+            <div class="mb-3 mr-3">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+                  <div class="card" style="height: 17vh;">
+                    <div class="card-body" style="padding:15px">
+                      <h3 class="font-job bold-600">5.328</h3>
+                      <h5 class="font-job" style="font-size: 18px">Việc làm mới 24h gần nhất</h5>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+                  <div class="card" style="height: 17vh;">
+                    <div class="card-body" style="padding:15px">
+                      <h3 class="font-job bold-600">32.898</h3>
+                      <h5 class="font-job" style="font-size: 18px">Việc làm đang tuyển</h5>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+                  <div class="card" style="height: 17vh;">
+                    <div class="card-body" style="padding:15px">
+                      <h3 class="font-job bold-600">13.635</h3>
+                      <h5 class="font-job" style="font-size: 18px">Công ty đang tuyển</h5>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+            <div class="charts mb-3 mr-3">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                  <div class="card" style="height: 45vh;">
+                    <div class="card-body" style="padding:15px">
+                      <h5 class="font-job bold-600">Nhu cầu tuyển dụng</h5>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
-                <div class="card flex-row">
-                  <div class="card-header image">
-                    <img [src]="images.logoPath" width="80" height="80" />
-                  </div>
-                  <div class="card-body" style="padding:15px 0">
-                    <h5 class="title">CHUYÊN VIÊN QUẢN TRỊ CƠ SỞ DỮ LIỆU</h5>
-                    <div class="company-name">Công ty WorkOffice Việt Nam</div>
-                    <div class="range-salary">10 - 20 triệu</div>
-                    <div class="address">Hà Nội</div>
-                  </div>
-                  <div class="card-body" style="padding:15px 10px">
-                    <div class="rounded-pill">
-                      <span><img [src]="images.hot" width="13" height="13" /></span><span class="hot"> Hot</span>
+                <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                  <div class="card" style="height: 45vh;">
+                    <div class="card-body" style="padding:15px">
+                      <h5 class="font-job bold-600">Chỉ số tuyển dụng</h5>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row pagination mt-4">
-              <div id="list-pagination">
-                <div class="button active"></div>
-                <div class="button"></div>
-                <div class="button"></div>
-                <div class="button"></div>
-              </div>
-            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="blogs m-4">
+      <h4 class="font-color-default">Blog tuyển dụng</h4>
+    </div>
+
+    <div class="job-blog m-4">
+
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <img [src]="images.laptop" />
+            <h5 class="font-bold mt-2">Trên tay Dell XPS 13 9345: Nền tảng Qualcomm Snapdragon X Elite</h5>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <img [src]="images.laptop" height="220" />
+            <h5 class="font-bold mt-2">Trên tay Dell XPS 13 9345: Nền tảng Qualcomm Snapdragon X Elite</h5>
+            <p>Dell XPS 13 trước đây luôn được cho là khuôn mẫu khi nói đến ultrabook Windows, có lẽ bây giờ chúng ta sẽ có một khuôn mẫu mới trong thế giới laptop Copilot+, với nền tảng Snapdragon X Elite X1E-80-100.</p>
+            <p>Dell XPS 13 trước đây luôn được cho là khuôn mẫu khi nói đến ultrabook Windows, có lẽ bây giờ chúng ta sẽ có một khuôn mẫu mới trong thế giới laptop Copilot+, với nền tảng Snapdragon X Elite X1E-80-100.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-4">
+          <div class="row">
+            <img [src]="images.laptop" />
+            <h6 class="font-bold mt-2">Trên tay Dell XPS 13 9345: Nền tảng Qualcomm Snapdragon X Elite</h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <img [src]="images.laptop" />
+            <h6 class="font-bold mt-2">Trên tay Dell XPS 13 9345: Nền tảng Qualcomm Snapdragon X Elite</h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <img [src]="images.laptop" />
+            <h6 class="font-bold mt-2">Trên tay Dell XPS 13 9345: Nền tảng Qualcomm Snapdragon X Elite</h6>
           </div>
         </div>
 
       </div>
+
     </div>
+
     <!-- <router-outlet></router-outlet> -->
   </section>
 

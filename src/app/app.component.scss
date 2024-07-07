@@ -2,6 +2,7 @@ $backgroundDefault :rgba(248, 216, 159, 1);
 
 body {
     margin: 0;
+    font-family: 'SVN-Gilroy', sans-serif;
 }
 
 .work {
@@ -56,7 +57,7 @@ header {
 
         span {
             font-family: Inter;
-            font-size: 6px;
+            font-size: 8px;
             font-weight: 700;
             line-height: 7.68px;
             text-align: left;
@@ -165,7 +166,6 @@ header {
 
             >.title {
                 background-color: #FFF8EC;
-                height: 60px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -184,8 +184,8 @@ header {
                 }
 
                 .title {
-                    font-size: 14px;
                     color: #270089;
+                    font-weight: 600;
                 }
 
                 .company-name {
@@ -258,6 +258,26 @@ header {
             }
         }
     }
+
+    .market-infomation {
+
+        .component {
+            background: linear-gradient(270deg, #F8D89F 10.12%, #FDC35B 52.68%, #FEB32C 100%);
+            // border: 1px solid #FFA400;
+            padding-top: 1px;
+
+            .title,
+            .text {
+                color: #270089;
+                font-weight: 600 !important;
+            }
+
+            .job-card {
+                background: linear-gradient(338deg, #F8D89F 10.12%, #FDC35B 52.68%, #FEB32C 100%);
+                backdrop-filter: blur(10px);
+            }
+        }
+    }
 }
 
 .font-color-default {
@@ -266,6 +286,10 @@ header {
 
 .font-job {
     color: #270089;
+}
+
+.bold-600 {
+    font-weight: 600 !important;
 }
 
 footer {
@@ -315,6 +339,80 @@ img {
 
 .pr-10 {
     padding-right: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.2);
+    border-radius: 1rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    .card-header {
+        border-bottom: none;
+        background-color: unset;
+    }
+
+    .title {
+        color: #270089;
+    }
+
+    .company-name {
+        font-size: 13px;
+        color: #270089;
+    }
+
+    .range-salary {
+        color: #FFA400;
+    }
+
+    .company-name {
+        font-size: 13px;
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem 0 0 1rem;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .rounded-pill {
+        text-align: center;
+        background-color: #FFDDE2;
+        padding-bottom: 3px;
+        width: 50px;
+    }
+
+    .hot {
+        color: #E3223C;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(191, 137, 20, 0.48) !important;
+}
+
+
+.btn-login,
+.btn-login:hover,
+.btn-login:active {
+    color: #fff;
+    background-color: #FFA400;
+}
+
+.btn-employer,
+.btn-employer:hover,
+.btn-employer:active {
+    color: #FFA400;
+    background-color: #fff;
 }
 
 /*Iphone(480 x 640)*/
