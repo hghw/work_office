@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { JobBestComponent } from './parials/jobs-best';
 import { MarketInfomationComponent } from './parials/market-infomation';
 import { BlogsComponent } from './parials/blogs';
-
 @Component({
   selector: 'app-root',
   standalone: true,

@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from "@angular/core";
 import { RouterOutlet } from '@angular/router';
-
+import { ChartComponent } from './charts/chart.component';
 @Component({
   selector: 'market-infomation',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ChartComponent],
   templateUrl: './index.html',
   styleUrl: './index.scss'
 })
+
 export class MarketInfomationComponent {
   images = {
     logoPath: "assets/images/logo.png",
