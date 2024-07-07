@@ -1,17 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { JobBestComponent } from './parials/jobs-best';
-import { MarketInfomationComponent } from './parials/market-infomation';
-import { BlogsComponent } from './parials/blogs';
 
 @Component({
-  selector: 'app-root',
+  selector: 'blogs',
   standalone: true,
-  imports: [RouterOutlet, JobBestComponent, MarketInfomationComponent, BlogsComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterOutlet],
+  templateUrl: './index.html',
+  styleUrl: './index.scss'
 })
-export class AppComponent {
+export class BlogsComponent {
   images = {
     logoPath: "assets/images/logo.png",
     googlePlayPath: "assets/images/google-play.png",
